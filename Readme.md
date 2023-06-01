@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кристина Сенина](https://up.htmlacademy.ru/htmlcss/37/user/1662463).
-* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
