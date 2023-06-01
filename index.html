@@ -99,8 +99,8 @@
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в городе Седона</h2>
-        <p class="text">Заинтересовались?</p>
-        <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        <p class="hotel-question">Заинтересовались?</p>
+        <p class="hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
         <a class="hotel-link" href="#">Поиск гостиницы в Седоне</a>
       </section>
@@ -109,7 +109,7 @@
       <section class="subscribe-block">
         <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
         <p class="text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="#" method="post">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email-field"></label>
           <input class="subscribe-filed" type="email" name="email" id="email-field" placeholder="Ваш e-mail" required>
           <button class="subscribe-submit" type="submit">Подписаться</button>
@@ -142,28 +142,43 @@
     </footer>
 
     <div class="modal">
-      <modal-window>
+      <div class="modal-window">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-close"></button>
-        <form class="modal-form" action="#" method="post">
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal-label" for="date-field">Дата Заезда:</label>
-          <input class="modal-date" type="date" name="date" id="date-field" value="2020-04-27">
-          <!-- <p class="error-message"> Мы не можем отправить вас в прошлое.</p> -->
+          <input class="modal-date" type="text" name="check-in-date" id="date-field" value="27 апреля 2020">
+          <p class="error-message"> Мы не можем отправить вас в прошлое.</p>
+
           <label class="modal-label" for="date-field-id">Дата Выезда:</label>
-          <input class="modal-date" type="date" name="date" id="date-field-id" value="2023-09-01">
-          <!-- <p class="message">На эти даты есть свободные номера. Пока есть.</p> -->
+          <input class="modal-date" type="text" name="check-out-date" id="date-field-id" value="1 сентября 2023">
+          <p class="message">На эти даты есть свободные номера. Пока есть.</p>
           <label class="modal-label">Взрослые:</label>
-          <!--нужно ли оборачивать следующие кнопки в <div>? -->
-          <button class="decrease" type="button">-</button>
-          <input type="text" name="field" value="2">
-          <button class="increase" type="button">+</button>
+          <button class="decrease" type="button">
+            -
+            <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
+          </button>
+          <input type="text" name="adult-number" value="2">
+          <button class="increase" type="button">
+            +
+            <span class="visually-hidden">Увеличить количество взрослых на 1</span>
+          </button>
+
           <label class="modal-label">Дети:</label>
-          <button class="decrease" type="button">-</button>
-          <input type="text" name="field" value="2">
-          <button class="increase" type="button">+</button>
+          <button class="decrease" type="button">
+            -
+            <span class="visually-hidden">Уменьшить количество детей на 1</span>
+          </button>
+          <input type="text" name="children-number" value="2">
+          <button class="increase" type="button">
+            +
+            <span class="visually-hidden">Увеличить количество детей на 1</span>
+          </button>
           <button class="find" type="submit">Найти</button>
         </form>
-      </modal-window>
+      </div>
     </div>
   </body>
 
