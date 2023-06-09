@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts\ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,47 +10,243 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
 body {
+    background-color: #F2F2F2;
+    color: #000000;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
+    font-weight: 400;
     line-height: 21px;
-    color: black;
-    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
+.page-container {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/* BLOCK HEADER */
+
 .header-page {
-    color: black;
-    background-color: white;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logo-link {}
+
+.navigation {
+    width: 339px;
+    height: 64px;
 }
 
 .navigation-list {
-    flex-direction: row;
+    list-style: none;
 }
+
+.navigation-item {}
 
 .navigation-link {
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
+    color: #000000;
     text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px
 }
 
+.user-menu {
+    list-style: none;
+}
+
+.user-item {}
+
 .user-link {
-    font-size: 16px;
-    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+/* BLOCK MAIN */
+
+.main-index {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* BLOCK HERO */
+
+.hero {
+    background-color: lightblue;
+    background-image: url("../images/index/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+/* BLOCK FEATURES */
+
+.features {
+    background-color: #ffffff;
+}
+
+.features-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
     text-transform: uppercase;
 }
 
-.main-index {
-    color: black;
-    background-color: white;
+.features-description {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
-.hero {
-    color: black;
-    background-color: white;
-    background-image: url("images/index/index-background.jpg");
+.features-list {
+    list-style: none;
 }
+
+.features-caption {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.features-text {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* BLOCK SERVICE */
+
+.service {
+    background-color: #ffffff;
+}
+
+.service-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.service-description {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-subject {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.service-text {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* BLOCK HOTEL-SEARCH */
+
+.hotel-search {
+    background-color: #ffffff;
+}
+
+.hotel-question {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.hotel-text {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* BLOCK FOOTER */
+
+.footer-page {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* SUBSCRIBE */
+
+.subscribe-block {
+    color: #ffffff;
+    background-color: lightblue;
+    background-image: url(../images/footer/subscribe-background.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 1200px;
+    height: 414.86px;
+}
+
+.subscribe-heading {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscribe-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.subscribe-form {}
+
+.subscribe-field {
+    background-color: #F2F2F2;
+    border-radius: 4px 0px 0px 4px;
+
+
+}
+
+.subscribe-button {
+    color: #ffffff;
+    background-color: #82B3D3;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0px 4px 4px 0px;
+}
+
+/* CONTACTS */
+
+.contacts {}
+
+.social-list {
+    list-style: none;
+}
+
+.social-item {}
