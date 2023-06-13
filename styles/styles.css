@@ -14,9 +14,23 @@
     font-display: swap;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
 body {
     background-color: #F2F2F2;
-    color: #000000;
+    color: #333333;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -49,6 +63,8 @@ body {
 
 .navigation-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation-item {}
@@ -85,7 +101,7 @@ body {
 /* BLOCK HERO */
 
 .hero {
-    background-color: lightblue;
+    background-color: #83B3D3;
     background-image: url("../images/index/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -106,7 +122,6 @@ body {
 }
 
 .features-description {
-    color: #333333;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -117,6 +132,7 @@ body {
 }
 
 .features-caption {
+    color: #000000;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -124,7 +140,6 @@ body {
 }
 
 .features-text {
-    color: #333333;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -137,6 +152,7 @@ body {
 }
 
 .service-title {
+    color: #000000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -155,6 +171,7 @@ body {
 }
 
 .service-subject {
+    color: #000000;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -162,7 +179,6 @@ body {
 }
 
 .service-text {
-    color: #333333;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -175,6 +191,7 @@ body {
 }
 
 .hotel-question {
+    color: #000000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -182,7 +199,6 @@ body {
 }
 
 .hotel-text {
-    color: #333333;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -199,7 +215,7 @@ body {
 
 .subscribe-block {
     color: #ffffff;
-    background-color: lightblue;
+    background-color: #83B3D3;
     background-image: url(../images/footer/subscribe-background.jpg);
     background-repeat: no-repeat;
     text-align: center;
@@ -208,6 +224,7 @@ body {
 }
 
 .subscribe-heading {
+    color: #000000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -252,6 +269,61 @@ body {
 .social-item {}
 
 /* MODAL */
+
+.modal-window {}
+
+.modal-title {
+    color: #000000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal-close {}
+
+.modal-form {}
+
+.modal-label {
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.modal-date {
+    color: #000000;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.error-message {
+    color: #ff5757;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.message {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.decrease {}
+
+.increase {}
+
+.find {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
 
 /* CATALOG */
 
@@ -316,11 +388,18 @@ body {
 
 .rangescale {}
 
+.range-handle {}
+
+.button-sbt {}
+
+.button-rst {}
+
 /*SEARCH RESULTS */
 
 .seacrh-results {}
 
 .search-heading {
+    color: #000000;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -355,13 +434,11 @@ body {
 }
 
 .hotel-text {
-    color: #333333;
     line-height: 21px;
     font-weight: 400;
 }
 
 .hotel-price {
-    color: #333333;
     line-height: 21px;
     font-weight: 400;
 }
@@ -402,7 +479,6 @@ body {
 }
 
 .hotel-rating {
-    color: #333333;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
