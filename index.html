@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body class="page">
+  <body class="page page-index">
     <div class="page-container">
       <header class="page-header">
-        <a class="logo-link" href="index.html">
+        <a class="logo-link" href="#">
           <img class="logo-img" src="images/header/logo.svg" alt="Логотип сайта Седоны" width="140" height="70">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -54,49 +54,56 @@
             alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!" width="458" height="352">
         </section>
         <section class="features">
-          <h2 class="features-title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</h2>
-          <p class="features-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="features-container">
+            <h2 class="features-title">Седона — небольшой городок в Аризоне,<br>
+              заслуживающий большего!</h2>
+            <p class="features-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <ul class="features-list">
-            <li class="features-item">
+            <li class="features-item features-city">
               <h3 class="features-caption">Настоящий городок</h3>
               <p class="features-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </li>
+            <div class="features-city-box">
               <img class="features-img" src="images/index/city-photo.jpg" alt="Фотография города Седоны" width="800"
                 height="385">
-            </li>
-            <li class="features-item">
+            </div>
+            <li class="features-item features-square">
               <h3 class="features-caption">Небольшая площадь</h3>
               <p class="features-text">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="features-item">
+            <li class="features-item features-road">
               <h3 class="features-caption">Красивая дорога</h3>
               <p class="features-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="features-item">
+            <li class="features-item features-tourist">
               <h3 class="features-caption">Мало туристов</h3>
               <p class="features-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="features-item">
+            <div class="features-bridge-box">
               <img class="features-img" src="images/index/devils-bridge.jpg" alt="Фотография Моста Дьявола" width="800"
                 height="385">
+            </div>
+            <li class="features-item features-bridge">
               <h3 class="features-caption">Там есть мост дьявола</h3>
               <p class="features-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
           </ul>
         </section>
+
         <section class="service">
           <h2 class="service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="service-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
-            <li class="service-item">
+            <li class="service-item house">
               <h3 class="service-subject">Жильё</h3>
               <p class="service-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="service-item">
+            <li class="service-item food">
               <h3 class="service-subject">Еда</h3>
               <p class="service-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="service-item">
+            <li class="service-item souvenir">
               <h3 class="service-subject">Сувениры</h3>
               <p class="service-text">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -111,7 +118,7 @@
         </section>
       </main>
       <footer class="footer-page">
-        <section class="subscribe subscribe-theme">
+        <section class="subscribe-block">
           <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -155,7 +162,7 @@
             </li>
           </ul>
           <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="logo-link" href="https://htmlacademy.ru/">
+          <a class="footer-logo-link" href="https://htmlacademy.ru/">
             <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_82075_245)">
                 <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black" />
