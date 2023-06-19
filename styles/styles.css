@@ -116,6 +116,22 @@ body {
     line-height: 24px;
 }
 
+.user-link-search {}
+
+.user-link-favorites {}
+
+.user-link-here {
+    color: #ffffff;
+    background-color: #756157;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 34px;
+    border-radius: 4px;
+}
+
 /* BLOCK MAIN */
 
 .main-container {
@@ -194,7 +210,7 @@ body {
     grid-row-end: 2;
     background-color: #82B3D3;
     color: #ffffff;
-    }
+}
 
 .features-city-box {
     grid-column-start: 2;
