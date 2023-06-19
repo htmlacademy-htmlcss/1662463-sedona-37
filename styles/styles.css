@@ -261,13 +261,17 @@ body {
     background-color: #ffffff;
 }
 
+.service-recomendation {
+    margin: 64px 0 64px 0;
+}
+
 .service-title {
     color: #000000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    margin: 64px 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -276,8 +280,8 @@ body {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin: 0 64px 0;
-    padding: 0;
+    margin: 0;
+    padding: 37px 0;
 }
 
 .service-list {
@@ -289,12 +293,27 @@ body {
 }
 
 .service-item {
-    padding: 80px 85px;
+    padding: 85px 80px;
 }
 
-.house,
+.house {
+    background: rgba(131, 179, 211, 0.12);
+    background-image: url("../images/index/house.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.food {
+    background-image: url("../images/index/food.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 .souvenir {
     background: rgba(131, 179, 211, 0.12);
+    background-image: url("../images/index/gift.svg");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .service-subject {
@@ -332,6 +351,19 @@ body {
     line-height: 26px;
 }
 
+.hotel-search-link {
+    margin: 0;
+    padding: 8px 50px;
+    color: #ffffff;
+    background-color: #756157;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
 /* BLOCK FOOTER */
 
 .footer-page {
@@ -346,7 +378,7 @@ body {
     text-align: center;
 }
 
-.subscribe-theme {
+.subscribe-block {
     color: #ffffff;
     background-image: url(../images/footer/subscribe-background.jpg);
     background-size: cover;
@@ -374,6 +406,7 @@ body {
     background-color: #F2F2F2;
     border-radius: 4px 0px 0px 4px;
     font-family: inherit;
+    text-align: start;
 }
 
 .subscribe-button {
@@ -386,20 +419,37 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
 }
 
 /* CONTACTS */
 
 .contacts {
+    margin: 0;
+    padding: 45px 69px 35px 39px;
     display: flex;
+    justify-content: space-between;
 }
 
 .social-list {
     list-style: none;
+    display: flex;
 }
 
 .social-item {}
+
+.social-link {}
+
+.tel-link {
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-logo-link {}
 
 /* MODAL */
 
