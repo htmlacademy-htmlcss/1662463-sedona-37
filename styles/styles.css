@@ -42,9 +42,7 @@ body {
     line-height: 21px;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    height: 100%;
 }
 
 .page-container {
@@ -52,7 +50,9 @@ body {
     width: 1200px;
     background-color: #ffffff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* BLOCK HEADER */
@@ -99,11 +99,12 @@ body {
 }
 
 .user-menu {
+    margin: 0;
+    margin-left: auto;
     list-style: none;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: auto;
 }
 
 .user-item {}
@@ -116,11 +117,11 @@ body {
     line-height: 24px;
 }
 
-.user-link-search {}
+.search {}
 
-.user-link-favorites {}
+.favorites {}
 
-.user-link-here {
+.here {
     color: #ffffff;
     background-color: #756157;
     font-size: 16px;
@@ -162,11 +163,7 @@ body {
 .features {
     background-color: #ffffff;
     margin: 0;
-    padding: 0;
-}
-
-.features-container {
-    padding: 69px 0 69px 0;
+    padding: 69px 0 0;
 }
 
 .features-title {
@@ -177,7 +174,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding: 0;
-    margin: 0 0 25px;
+    margin: 0 auto 25px;
+    width: 660px;
 
 }
 
@@ -186,79 +184,53 @@ body {
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    margin: 0;
+    margin: 0 auto 70px;
     padding: 0;
+    width: 660px;
 }
 
 .features-list {
     list-style: none;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 385px 385px 385px;
     margin: 0;
     padding: 20px 0;
 }
 
 .features-item {
-    padding: 85px 85px;
+    margin: 0;
+    padding: 85px 92px;
+    background-color: #ffffff;
+
 }
 
-.features-city {
+.features-item:nth-child(even) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.features-item--special {
+    display: flex;
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: #82B3D3;
+    grid-column-end: -1;
     color: #ffffff;
+    padding: 0;
 }
 
-.features-city-box {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.features-square {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.features-road {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background: rgba(131, 179, 211, 0.2);
-}
-
-.features-tourist {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.features-bridge {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.features-container {
+    width: 400px;
+    padding: 84px 84px;
+    box-sizing: border-box;
     background-color: #82B3D3;
-    color: #ffffff;
-
 }
 
-.features-bridge-box {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.features-img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .features-caption {
+    margin: 0;
+    padding: 20px 25px 75px;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -266,6 +238,8 @@ body {
 }
 
 .features-text {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -277,18 +251,15 @@ body {
     background-color: #ffffff;
 }
 
-.service-recomendation {
-    margin: 64px 0 64px 0;
-}
-
 .service-title {
     color: #000000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 45px auto 0;
     padding: 0;
+    width: 510px;
 }
 
 .service-description {
@@ -296,43 +267,48 @@ body {
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
-    margin: 0;
-    padding: 37px 0;
+    margin: 0 auto 64px;
+    padding: 20px 0 0;
+    width: 510px;
 }
 
 .service-list {
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
     margin: 0;
     padding: 0;
 }
 
 .service-item {
-    padding: 85px 80px;
+    margin: 0;
+    padding: 183px 50px 111px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.service-item:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .house {
-    background: rgba(131, 179, 211, 0.12);
     background-image: url("../images/index/house.svg");
-    background-repeat: no-repeat;
-    background-position: top;
+    background-position: center 40px;
 }
 
 .food {
     background-image: url("../images/index/food.svg");
-    background-repeat: no-repeat;
-    background-position: top;
+    background-position: center 40px;
 }
 
 .souvenir {
-    background: rgba(131, 179, 211, 0.12);
     background-image: url("../images/index/gift.svg");
-    background-repeat: no-repeat;
-    background-position: top;
+    background-position: center 40px;
 }
 
 .service-subject {
+    margin: 0;
+    padding: 0;
     color: #000000;
     font-size: 24px;
     font-weight: 700;
@@ -341,6 +317,8 @@ body {
 }
 
 .service-text {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -349,11 +327,15 @@ body {
 /* BLOCK HOTEL-SEARCH */
 
 .hotel-search {
-    padding: 96px 304px;
-
+    margin: 96px auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 600px;
 }
 
 .hotel-question {
+    margin: 0;
+    padding: 0;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -362,6 +344,8 @@ body {
 }
 
 .hotel-text {
+    margin: 0;
+    padding: 20px 0 63px;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -369,7 +353,7 @@ body {
 
 .hotel-search-link {
     margin: 0;
-    padding: 8px 50px;
+    padding: 13px 50px;
     color: #ffffff;
     background-color: #756157;
     font-size: 20px;
@@ -403,6 +387,8 @@ body {
 }
 
 .subscribe-heading {
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -410,6 +396,8 @@ body {
 }
 
 .subscribe-text {
+    margin: 0;
+    padding: 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -448,6 +436,8 @@ body {
 }
 
 .social-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
 }
@@ -639,7 +629,7 @@ body {
     font-weight: 700;
 }
 
-.hotel-text {
+.hotel-object {
     line-height: 21px;
     font-weight: 400;
 }
