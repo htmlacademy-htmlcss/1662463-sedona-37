@@ -254,7 +254,7 @@ body {
 }
 
 .service-container {
-    padding: 65px 0 65px;
+    padding: 65px 0 63px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 500px;
@@ -290,7 +290,7 @@ body {
 
 .service-item {
     margin: 0;
-    padding: 0;
+    padding: 183px 85px 81px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -303,17 +303,17 @@ body {
 
 .house {
     background-image: url("../images/index/house.svg");
-    background-position: center 80px;
+    background-position: center 81px;
 }
 
 .food {
     background-image: url("../images/index/food.svg");
-    background-position: center 80px;
+    background-position: center 81px;
 }
 
 .souvenir {
     background-image: url("../images/index/gift.svg");
-    background-position: center 80px;
+    background-position: center 79px;
 }
 
 .service-subject {
@@ -328,6 +328,7 @@ body {
 
 .service-text {
     margin: 0;
+    margin-top: 30px;
     padding: 0;
     font-size: 18px;
     font-weight: 400;
@@ -387,20 +388,23 @@ body {
 /* SUBSCRIBE */
 
 .subscribe {
+    margin: 0;
     padding: 96px 258px 104px;
     text-align: center;
+    width: 684px;
 }
 
 .subscribe-block {
     color: #ffffff;
+    background-color: #82B3D3;
     background-image: url(../images/footer/subscribe-background.jpg);
     background-size: cover;
-    background-color: #82B3D3;
     background-repeat: no-repeat;
 }
 
 .subscribe-heading {
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     font-size: 30px;
     font-weight: 700;
@@ -410,20 +414,31 @@ body {
 
 .subscribe-text {
     margin: 0;
-    padding: 0;
+    margin-bottom: 55px;
+    padding: 0 70px;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
 }
 
-.subscribe-form {}
+.subscribe-form {
+    display: flex;
+    margin: 0 auto;
+    width: 684px;
+}
 
 .subscribe-field {
-    font-family: inherit;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
     background-color: #F2F2F2;
-    border-radius: 4px 0px 0px 4px;
-    font-family: inherit;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    box-sizing: border-box;
     text-align: start;
+    padding: 12px 20px;
+    width: 452px;
 }
 
 .subscribe-button {
@@ -437,15 +452,18 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 0 4px 4px 0;
+    border: none;
+    padding: 8px;
+    width: 232px;
 }
 
 /* CONTACTS */
 
 .contacts {
-    margin: 0;
-    padding: 45px 69px 35px 39px;
+    margin: 45px 70px 35px;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social-list {
@@ -453,11 +471,23 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.social-item {}
+.social-item {
+    margin: 0;
+    padding: 13px;
+    row-gap: 5px;
+}
 
-.social-link {}
+.social-link {
+    display: block;
+}
+
+.tel-container {
+    margin: 0 auto;
+    padding: 0 236px;
+}
 
 .tel-link {
     color: #000000;
@@ -466,9 +496,16 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
+    box-sizing: border-box;
+    width: 331px;
+    display: block;
 }
 
-.footer-logo-link {}
+.academy-link {
+    margin: 0;
+    margin-left: auto;
+    padding-top: 4px;
+}
 
 /* MODAL */
 
