@@ -679,7 +679,7 @@ body {
 .hotel-list {
     list-style: none;
     display: grid;
-    grid-template-columns: 340px 340px 340px;
+    grid-template-columns: repeat(3, 340px);
     grid-gap: 20px;
     margin: 40px 0;
     padding: 0;
@@ -763,6 +763,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .pagination-link {
@@ -772,6 +778,12 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
+    width: 60px;
+    height: 60px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 0;
 }
 
 .pagination-current {
