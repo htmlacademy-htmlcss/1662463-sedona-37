@@ -510,7 +510,11 @@ body {
 /* MODAL */
 
 .modal-window {
-    display: none;
+    margin: 0 auto;
+    padding: 64px 70px;
+    width: 717px;
+    height: 576px;
+    box-sizing: border-box;
 }
 
 .modal-title {
@@ -523,7 +527,9 @@ body {
 
 .modal-close {}
 
-.modal-form {}
+.modal-form {
+    display: grid;
+}
 
 .modal-label {
     color: #000000;
@@ -559,11 +565,14 @@ body {
 .find {
     color: #ffffff;
     background-color: #83B3D3;
-    font-family: inherit;
+    font-family: 'PT SANS', sans-serif;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 70px;
 
 }
 
