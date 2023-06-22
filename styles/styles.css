@@ -584,6 +584,8 @@ body {
     background-image: url(../images/catalog/filter-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 35px 70px 70px;
 }
 
 .inner-header-title {
@@ -591,9 +593,16 @@ body {
     line-height: 78px;
     font-weight: 700;
     text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 7px;
 }
 
-.breadcrumbs {}
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    width: 114px;
+}
 
 .breadcrumbs-link {
     font-size: 16px;
@@ -603,7 +612,15 @@ body {
 
 /*CATALOG-FILTER */
 
-.catalog-objects {}
+.catalog-objects {
+    margin-top: 40px;
+
+}
+
+.catalog-filter {
+    display: grid;
+    grid-template-columns: 150px 150px 288px 191px;
+}
 
 .catalog-filter-group {}
 
@@ -816,12 +833,12 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     display: block;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 12px 0;
+    padding: 12px 10px;
 }
 
 .pagination-current {
