@@ -192,7 +192,7 @@ body {
 .features-list {
     list-style: none;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 400px);
     margin: 0;
     padding: 0;
 }
@@ -338,10 +338,8 @@ body {
 /* BLOCK HOTEL-SEARCH */
 
 .hotel-search {
-    margin: 96px auto;
-    padding: 0;
-    box-sizing: border-box;
-    width: 600px;
+    margin: 0 auto;
+    padding: 96px 0 97px;
 }
 
 .hotel-question {
@@ -391,7 +389,6 @@ body {
     margin: 0;
     padding: 96px 258px 104px;
     text-align: center;
-    width: 684px;
 }
 
 .subscribe-block {
@@ -460,33 +457,35 @@ body {
 /* CONTACTS */
 
 .contacts {
-    margin: 45px 70px 35px;
-    padding: 0;
+    margin: 0 auto;
+    padding: 45px 70px 35px;
     display: flex;
     flex-wrap: wrap;
+    width: 1060px;
 }
 
 .social-list {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 47px);
+
 }
 
 .social-item {
-    margin: 0;
-    padding: 13px;
-    row-gap: 5px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .social-link {
-    display: block;
+
 }
 
 .tel-container {
     margin: 0 auto;
-    padding: 0 236px;
+    padding: 0;
+
 }
 
 .tel-link {
@@ -503,7 +502,6 @@ body {
 
 .academy-link {
     margin: 0;
-    margin-left: auto;
     padding-top: 4px;
 }
 
@@ -724,11 +722,13 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 8px 50px;
+    border-radius: 4px;
+    border: none;
+
 }
 
-.button-1,
-.button-3,
-.button-4 {
+.button-fav {
     background: #82B3D3;
     color: #ffffff;
     font-family: inherit;
@@ -738,17 +738,14 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 8px 50px;
+    border-radius: 4px;
+    border: none;
+
 }
 
-.button-2 {
+.btn-green {
     background-color: #7DB54F;
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .hotel-rating {
@@ -756,6 +753,11 @@ body {
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
+    background: #F2F2F2;
+    border-radius: 4px;
+    width: 140px;
+    height: 37px;
+    box-sizing: border-box;
 }
 
 .pagination {
