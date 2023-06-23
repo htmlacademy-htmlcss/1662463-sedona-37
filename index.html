@@ -161,7 +161,7 @@
             </li>
           </ul>
           <div class="tel-container">
-          <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <a class="academy-link" href="https://htmlacademy.ru/">
             <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -210,41 +210,57 @@
           </a>
         </section>
       </footer>
-      <div class="modal">
+      <div class="modal modal--show">
         <div class="modal-window">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <button class="modal-close">
             <span class="visually-hidden">Закрыть модальное окно</span>
           </button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-label" for="date-field">Дата Заезда:</label>
-            <input class="modal-date" type="text" name="check-in-date" id="date-field" value="27 апреля 2020">
-            <p class="error-message"> Мы не можем отправить вас в прошлое.</p>
-
-            <label class="modal-label" for="date-field-id">Дата Выезда:</label>
-            <input class="modal-date" type="text" name="check-out-date" id="date-field-id" value="1 сентября 2023">
-            <p class="message">На эти даты есть свободные номера. Пока есть.</p>
-            <label class="modal-label">Взрослые:</label>
-            <button class="decrease" type="button">
-              -
-              <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
-            </button>
-            <input type="text" name="adult-number" value="2">
-            <button class="increase" type="button">
-              +
-              <span class="visually-hidden">Увеличить количество взрослых на 1</span>
-            </button>
-
-            <label class="modal-label">Дети:</label>
-            <button class="decrease" type="button">
-              -
-              <span class="visually-hidden">Уменьшить количество детей на 1</span>
-            </button>
-            <input type="text" name="children-number" value="2">
-            <button class="increase" type="button">
-              +
-              <span class="visually-hidden">Увеличить количество детей на 1</span>
-            </button>
+            <div class="check-in-container">
+              <label class="modal-label" for="date-field">Дата Заезда:</label>
+              <div class="check-in-wrapper">
+                <input class="modal-date" type="text" name="check-in-date" id="date-field" value="27 апреля 2020">
+              </div>
+              <p class="error-message"> Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="check-out-container">
+              <label class="modal-label" for="date-field-id">Дата Выезда:</label>
+              <div class="check-out-wrapper">
+                <input class="modal-date" type="text" name="check-out-date" id="date-field-id" value="1 сентября 2023">
+              </div>
+              <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="guests-container">
+              <div class="guests-container-adult">
+                <label class="modal-label adult">Взрослые:</label>
+                <div class="button-container">
+                  <button class="decrease" type="button">
+                    -
+                    <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
+                  </button>
+                  <input class="number" type="text" name="adult-number" value="2">
+                  <button class="increase" type="button">
+                    +
+                    <span class="visually-hidden">Увеличить количество взрослых на 1</span>
+                  </button>
+                </div>
+              </div>
+              <div class="guests-container-children">
+                <label class="modal-label children">Дети:</label>
+                <div class="button-container">
+                  <button class="decrease" type="button">
+                    -
+                    <span class="visually-hidden">Уменьшить количество детей на 1</span>
+                  </button>
+                  <input class="number" type="text" name="children-number" value="2">
+                  <button class="increase" type="button">
+                    +
+                    <span class="visually-hidden">Увеличить количество детей на 1</span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <button class="find" type="submit">Найти</button>
           </form>
         </div>
