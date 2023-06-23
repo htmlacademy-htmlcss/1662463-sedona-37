@@ -505,37 +505,15 @@ body {
 
 /* MODAL */
 
-.modal {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(242, 242, 242, 0.8);
-}
-
-.modal--show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .modal-window {
     margin: 0 auto;
     padding: 64px 70px;
     width: 717px;
+    height: 576px;
     box-sizing: border-box;
-    border-radius: 30px;
-    background-color: #ffffff;
-    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .modal-title {
-    margin: 0;
-    padding: 0;
     color: #000000;
     font-size: 30px;
     line-height: 36px;
@@ -543,95 +521,24 @@ body {
     text-transform: uppercase;
 }
 
-.modal-close {
-    background-color: #F2F2F2;
-    box-sizing: border-box;
-    border-radius: 50px;
-    border: none;
-    width: 52px;
-    height: 52px;
-}
+.modal-close {}
 
 .modal-form {
-    margin-top: 64px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.check-in-container {
-    margin: 0;
-    padding-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.check-in-wrapper {}
-
-.check-out-container {
-    margin: 0;
-    padding-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.check-out-wrapper {}
-
-.guests-container {
-    margin: 0;
-    padding-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.guests-container-adult {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.guests-container-children {
-    margin: 0;
-    margin-left: 92px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
 }
 
 .modal-label {
-    margin: 0;
-    padding: 10px 18px;
-    padding-left: 0;
     color: #000000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
 }
 
-.adult {
-    margin: 0;
-    padding-right: 0;
-}
-
-.children {
-    margin: 0;
-    padding-right: 10px;
-}
-
 .modal-date {
-    margin: 0;
-    padding: 12px;
     color: #000000;
-    background-color: #F2F2F2;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    width: 440px;
 }
 
 .error-message {
@@ -639,57 +546,17 @@ body {
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
 }
 
 .message {
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
 }
 
-.button-container {
-    margin: 0;
-    margin-left: 46px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
+.decrease {}
 
-.decrease,
-.increase {
-    margin: 0 auto;
-    padding: 0;
-    background-color: #F2F2F2;
-    box-sizing: border-box;
-    width: 40px;
-    height: 48px;
-    border: none;
-    border-radius: 4px 0 0 4px;
-}
-
-.increase {
-    border-radius: 0 4px 4px 0;
-}
-
-.number {
-    margin: 0 auto;
-    padding: 0;
-    background-color: #F2F2F2;
-    font-size: 18px;
-    font-family: PT Sans, sans-serif;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    width: 26px;
-    height: 48px;
-    border: none;
-}
-
+.increase {}
 
 .find {
     color: #ffffff;
@@ -751,49 +618,25 @@ body {
 }
 
 .catalog-filter {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1060px;
+    display: grid;
+    grid-template-columns: 150px 150px 288px 191px;
 }
 
-.catalog-filter-group {
-    margin: 0;
-    margin-right: 70px;
-    padding: 0;
-}
-
-.catalog-filter-price {
-    margin: 0;
-    margin-left: 70px;
-    padding: 0;
-}
+.catalog-filter-group {}
 
 .catalog-filter-title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    margin: 0;
-    padding-bottom: 32px;
 }
 
 .catalog-filter-list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0;
-    width: 140px;
 }
 
-
-.catalog-filter-item:not(:last-child) {
+.catalog-filter-item {
     line-height: 23px;
     font-weight: 400;
-    margin: 0;
-    padding-bottom: 16px;
 }
 
 .control {}
@@ -802,27 +645,7 @@ body {
 
 .range-label {}
 
-.range-number {
-    margin: 0;
-    padding: 12px;
-    background-color: #F2F2F2;
-    font-family: PT Sans, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    width: 143px;
-    box-sizing: border-box;
-    border: none;
-}
-
-.min {
-    border-radius: 4px 0 0 4px;
-}
-
-.max {
-    border-radius: 0 4px 4px 0;
-    ;
-}
+.range-number {}
 
 .rage-container {}
 
@@ -830,24 +653,12 @@ body {
 
 .range-handle {}
 
-.button-sbt,
-.button-rst {
-    color: #ffffff;
-    background-color: #82B3D3;
-    font-family: PT Sans, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    padding: 8px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    width: 191px;
+.button-sbt {
+    font-family: inherit;
 }
 
 .button-rst {
-    background-color: transparent;
+    font-family: inherit;
 }
 
 /*SEARCH RESULTS */
