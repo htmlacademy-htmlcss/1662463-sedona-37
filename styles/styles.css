@@ -762,12 +762,14 @@ body {
     margin: 0;
     margin-right: 70px;
     padding: 0;
+    border: none;
 }
 
 .catalog-filter-price {
     margin: 0;
     margin-left: 70px;
     padding: 0;
+    border: none;
 }
 
 .catalog-filter-title {
