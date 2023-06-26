@@ -112,15 +112,15 @@
               </fieldset>
               <fieldset class="catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
-                <label class="range-label" for="min-price">от</label>
-                <input class="range-number min" type="number" name="min-price" id="min-price" placeholder="0" value="0">
-
-                <label class="range-label" for="max-price">до</label>
-                <input class="range-number max" type="number" name="max-price" id="max-price" placeholder="9000"
-                  value="9000">
-
-                <div class="rage-container">
+                <div class="price-container">
+                  <label class="price-label label-min" for="min-price">от</label>
+                  <input class="price-number input-min" type="number" name="min-price" id="min-price" placeholder="0"
+                    value="0">
+                  <label class="price-label label-max" for="max-price">до</label>
+                  <input class="price-number input-max" type="number" name="max-price" id="max-price" placeholder="9000"
+                    value="9000">
+                </div>
+                <div class="range-container">
                   <div class="rangescale">
                     <div class="range">
                       <button class="range-handle rangle-handle-min" type="button">
@@ -130,10 +130,12 @@
                         <span class="visually-hidden">Установить максимальный порог цены</span>
                       </button>
                     </div>
-                    <button class="button-sbt" type="submit">Применить</button>
-                    <button class="button-rst" type="reset">Сбросить</button>
                   </div>
                 </div>
+              </fieldset>
+              <fieldset class="catalog-filter-button">
+                <button class="button-sbt" type="submit">Применить</button>
+                <button class="button-rst" type="reset">Сбросить</button>
               </fieldset>
             </form>
           </section>
