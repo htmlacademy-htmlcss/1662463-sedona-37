@@ -717,6 +717,7 @@ body {
 
 }
 
+
 /* CATALOG */
 
 /* MAIN-INNER */
@@ -730,7 +731,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
-    padding: 35px 70px 70px;
+    padding: 35px 70px 69px;
 }
 
 .inner-header-title {
@@ -768,11 +769,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 1060px;
+    gap: 70px;
 }
 
 .catalog-filter-group {
     margin: 0;
-    margin-right: 70px;
     padding: 0;
     border: none;
 }
@@ -881,7 +882,7 @@ body {
     border-top: 4px solid #ffffff;
     position: absolute;
     left: 0;
-    top: -4px;
+    top: -1px;
     z-index: 5;
 }
 
@@ -909,7 +910,6 @@ body {
 
 .catalog-filter-button {
     margin: 0;
-    margin-left: 70px;
     padding: 0;
     padding-top: 57px;
     display: flex;
@@ -943,7 +943,7 @@ body {
 
 .search-results {
     margin: 0 auto;
-    padding: 50px 70px 60px;
+    padding: 50px 70px 22px;
 }
 
 .search-container {
@@ -999,7 +999,7 @@ body {
     margin: 20px;
     padding: 0;
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: repeat(2, 140px);
     grid-template-rows: 212px min-content min-content 36px min-content;
     row-gap: 16px;
     column-gap: 21px;
@@ -1048,6 +1048,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     margin: 0;
+    justify-self: end;
 }
 
 .hotel-btn {
@@ -1116,7 +1117,7 @@ body {
 .pagination {
     background-color: #ffffff;
     margin: 0;
-    padding: 36px 0;
+    padding: 38px 0;
     list-style: none;
     display: flex;
     text-align: center;
@@ -1138,7 +1139,7 @@ body {
     display: block;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 12px 10px;
+    padding: 13px 10px;
 }
 
 .dots {
