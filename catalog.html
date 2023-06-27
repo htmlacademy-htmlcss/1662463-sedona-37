@@ -88,7 +88,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -141,21 +141,25 @@
           </section>
         </div>
         <section class="search-results">
-          <h2 class="search-heading">Найдено гостиниц: 38</h2>
-          <div class="sorting-container">
+          <div class="search-container">
+            <h2 class="search-heading">Найдено гостиниц: 38</h2>
+
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <a class="layout table" href="#">
-              <span class="visually-hidden">Таблица</span>
-            </a>
-            <a class="layout large-icons" href="#">
-              <span class="visually-hidden">Крупные значки</span>
-            </a>
-            <a class="layout list" href="#">
-              <span class="visually-hidden">Список</span>
-            </a>
+
+            <div class="layout-container">
+              <a class="layout table" href="#">
+                <span class="visually-hidden">Таблица</span>
+              </a>
+              <a class="layout large-icons" href="#">
+                <span class="visually-hidden">Крупные значки</span>
+              </a>
+              <a class="layout list" href="#">
+                <span class="visually-hidden">Список</span>
+              </a>
+            </div>
           </div>
           <ul class="hotel-list">
             <li class="hotel-item">
@@ -241,7 +245,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link dots" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
