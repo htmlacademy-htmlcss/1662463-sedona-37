@@ -530,7 +530,15 @@ body {
     border-radius: 30px;
     background-color: #ffffff;
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
 
+}
+
+.modal-header {
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 37px;
 }
 
 .modal-title {
@@ -550,14 +558,18 @@ body {
     border: none;
     width: 52px;
     height: 52px;
+    position: absolute;
+    right: 52px;
+    top: 64px;
 }
 
 .modal-form {
-    margin-top: 64px;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 48px;
 }
 
 .check-in-container {
@@ -571,7 +583,7 @@ body {
 
 .check-out-container {
     margin: 0;
-    padding-bottom: 48px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -580,7 +592,7 @@ body {
 
 .guests-container {
     margin: 0;
-    padding-bottom: 48px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
