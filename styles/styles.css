@@ -174,7 +174,28 @@ body {
     display: inline-block;
     border-radius: 4px;
     min-width: 144px;
+}
 
+.here:hover {
+    background-color: rgba(97, 80, 72, 1);
+    outline: none;
+}
+
+.here:focus {
+    background-color: rgba(97, 80, 72, 1);
+    outline: none;
+}
+
+.here:active {
+    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.here:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 /* BLOCK MAIN */
@@ -437,6 +458,28 @@ body {
     cursor: pointer;
 }
 
+.hotel-search-link:hover {
+    background-color: rgba(97, 80, 72, 1);
+    outline: none;
+}
+
+.hotel-search-link:focus {
+    background-color: rgba(97, 80, 72, 1);
+    outline: none;
+}
+
+.hotel-search-link:active {
+    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.hotel-search-link:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
 /* BLOCK FOOTER */
 
 .footer-page {
@@ -517,6 +560,29 @@ body {
     padding: 8px;
     width: 232px;
 }
+
+.subscribe-button:hover {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.subscribe-button:focus {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.subscribe-button:active {
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.subscribe-button:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
 
 /* CONTACTS */
 
@@ -611,7 +677,7 @@ body {
     background-color: rgba(117, 97, 87, 0.3);
 }
 
-/* MODAL
+/* MODAL */
 
 .modal {
     margin: 0;
@@ -661,6 +727,9 @@ body {
 
 .modal-close {
     background-color: #F2F2F2;
+    background-image: url(../images/modal/modal-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     box-sizing: border-box;
     border-radius: 50px;
     border: none;
@@ -670,6 +739,21 @@ body {
     position: absolute;
     right: 52px;
     top: 64px;
+}
+
+.modal-close:hover {
+    background-color: rgba(230, 230, 230, 1);
+    outline: none;
+}
+
+.modal-close:focus {
+    border: 3px solid rgba(131, 179, 211, 1);
+    outline: none;
+}
+
+.modal-close:active {
+   background-color: rgba(230, 230, 230, 1);
+   outline: none;
 }
 
 .modal-form {
@@ -827,7 +911,22 @@ body {
     padding: 18px 70px;
 
 }
-*/
+
+.find:hover {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.find:focus {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.find:active {
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
 
 /* CATALOG */
 
@@ -1054,9 +1153,50 @@ body {
     width: 191px;
 }
 
+.button-sbt:hover {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.button-sbt:focus {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.button-sbt:active {
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.button-sbt:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
 .button-rst {
     background-color: transparent;
     margin-top: 32px;
+}
+
+.button-rst:hover {
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+.button-rst:focus {
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid #83B3D3;
+}
+
+.button-rst:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.button-rst:disabled {
+    color: rgba(255, 255, 255, 1);
 }
 
 /*SEARCH RESULTS */
@@ -1101,6 +1241,18 @@ body {
 
 }
 
+.select-control:hover {
+    border-color: rgba(104, 162, 202, 1);
+}
+
+.select-control:focus {
+    border-color: rgba(104, 162, 202, 1);
+}
+
+.select-control:disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .layout-container {
     display: grid;
     grid-template-columns: repeat(3, 48px);
@@ -1117,6 +1269,18 @@ body {
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.layout:hover {
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.layout:focus {
+    border-color: rgba(104, 162, 202, 1);
+}
+
+.layout:active {
+    border-color: rgba(0, 0, 0, 1);
 }
 
 .table {
@@ -1142,8 +1306,8 @@ body {
 }
 
 .hotel-item {
-    margin: 20px;
-    padding: 0;
+    margin: 0;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 140px);
     grid-template-rows: 212px min-content min-content 36px min-content;
@@ -1218,6 +1382,28 @@ body {
 
 }
 
+.hotel-btn:hover {
+    background-color: rgba(97, 80, 72, 1);
+    outline: none;
+}
+
+.hotel-btn:focus {
+    background-color: rgba(97, 80, 72, 1);
+    outline: none;
+}
+
+.hotel-btn:active {
+    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.hotel-btn:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
 .button-fav {
     background: #82B3D3;
     color: #ffffff;
@@ -1236,6 +1422,28 @@ body {
     grid-row: 4 / 5;
     margin: 0;
 
+}
+
+.button-fav:hover {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.button-fav:focus {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.button-fav:active {
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.button-fav:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .btn-green {
@@ -1307,6 +1515,21 @@ body {
     padding: 13px 10px;
 }
 
+.pagination-link:hover {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.pagination-link:focus {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.pagination-link:active {
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .dots {
     background-color: transparent;
     color: #000000;
@@ -1315,5 +1538,10 @@ body {
 .pagination-current {
     background-color: #F2F2F2;
     color: #000000;
+}
 
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+    background-color: rgba(242, 242, 242, 1);
 }
