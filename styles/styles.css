@@ -211,6 +211,7 @@ body {
 }
 
 .features-title {
+    position: relative;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -275,6 +276,7 @@ body {
 }
 
 .features-caption {
+    position: relative;
     margin: 0 30px 30px;
     padding: 0;
     font-size: 24px;
@@ -282,6 +284,21 @@ body {
     line-height: 28px;
     text-transform: uppercase;
 }
+
+.features-caption::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 56px;
+    top: 86px;
+}
+
+.features-special::before {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 
 .features-text {
     margin: 62px 0 0;
@@ -305,15 +322,16 @@ body {
 }
 
 .service-title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 0;
 }
+
 
 .service-description {
     color: #333333;
