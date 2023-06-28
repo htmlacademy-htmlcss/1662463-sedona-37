@@ -100,10 +100,6 @@ body {
     cursor: pointer;
 }
 
-.home {}
-
-.catalog {}
-
 .user-menu {
     margin: 0;
     margin-left: auto;
@@ -532,6 +528,20 @@ body {
     cursor: pointer;
 }
 
+.social-link:hover {
+    background-color: rgba(104, 162, 202, 1);
+}
+
+.social-link:focus {
+    background-color: rgba(104, 162, 202, 1);
+    outline: none;
+}
+
+.social-link:active {
+    background-color: rgba(104, 162, 202, 0.3);
+    outline: none;
+}
+
 .tel-container {
     margin: 0 auto;
     padding: 0;
@@ -551,10 +561,36 @@ body {
     cursor: pointer;
 }
 
+.tel-link:hover {
+    background-color: rgba(117, 97, 87, 1);
+}
+
+.tel-link:focus {
+    background-color: rgba(117, 97, 87, 1);
+    outline: none;
+}
+
+.tel-link:active {
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
 .academy-link {
     margin: 0;
     padding-top: 4px;
     cursor: pointer;
+}
+
+.academy-link:hover {
+    background-color: rgba(117, 97, 87, 1);
+}
+
+.academy-link:focus {
+    background-color: rgba(117, 97, 87, 1);
+    outline: none;
+}
+
+.academy-link:active {
+    background-color: rgba(117, 97, 87, 0.3);
 }
 
 /* MODAL
@@ -812,6 +848,11 @@ body {
     line-height: 21px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.home-link {
+    background-image: url(../images/catalog/home.svg);
+    background-repeat: no-repeat;
 }
 
 /*CATALOG-FILTER */
