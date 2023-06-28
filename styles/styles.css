@@ -67,6 +67,7 @@ body {
     position: absolute;
     left: 70px;
     top: 0;
+    cursor: pointer;
 }
 
 .navigation {
@@ -96,6 +97,13 @@ body {
     font-weight: 700;
     line-height: 24px;
     padding: 20px 16px;
+    cursor: pointer;
+}
+
+.home{}
+
+.catalog {
+
 }
 
 .user-menu {
@@ -115,6 +123,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .search {}
@@ -372,6 +381,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 /* BLOCK FOOTER */
@@ -450,6 +460,7 @@ body {
     text-transform: uppercase;
     border-radius: 0 4px 4px 0;
     border: none;
+    cursor: pointer;
     padding: 8px;
     width: 232px;
 }
@@ -478,7 +489,9 @@ body {
     padding: 10px;
 }
 
-.social-link {}
+.social-link {
+    cursor: pointer;
+}
 
 .tel-container {
     margin: 0 auto;
@@ -496,14 +509,16 @@ body {
     box-sizing: border-box;
     width: 331px;
     display: block;
+    cursor: pointer;
 }
 
 .academy-link {
     margin: 0;
     padding-top: 4px;
+    cursor: pointer;
 }
 
-/* MODAL */
+/* MODAL
 
 .modal {
     margin: 0;
@@ -556,6 +571,7 @@ body {
     box-sizing: border-box;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
     width: 52px;
     height: 52px;
     position: absolute;
@@ -680,6 +696,7 @@ body {
     width: 40px;
     height: 48px;
     border: none;
+    cursor: pointer;
     border-radius: 4px 0 0 4px;
 }
 
@@ -712,11 +729,12 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
     border-radius: 10px;
     padding: 18px 70px;
 
 }
-
+*/
 
 /* CATALOG */
 
@@ -754,6 +772,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 /*CATALOG-FILTER */
@@ -803,9 +822,13 @@ body {
     padding-bottom: 16px;
 }
 
-.control {}
+.control {
+    cursor: pointer;
+}
 
-.control-input {}
+.control-input {
+
+}
 
 .catalog-filter-price {
     margin: 0;
@@ -930,6 +953,7 @@ body {
     padding: 8px;
     box-sizing: border-box;
     border: none;
+    cursor: pointer;
     border-radius: 4px;
     width: 191px;
 }
@@ -968,7 +992,7 @@ body {
 
 .select-control {
     color: #333333;
-    font-family: PT Sans;
+    font-family: PT Sans, sans-serif;
     font-size: 18px;
     line-height: 21px;
     width: 292px;
@@ -977,6 +1001,7 @@ body {
     box-sizing: border-box;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
+    cursor: pointer;
 
 }
 
@@ -1011,6 +1036,7 @@ body {
 .hotel-link {
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .img {
@@ -1063,6 +1089,7 @@ body {
     padding: 8px;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     margin: 0;
@@ -1083,6 +1110,7 @@ body {
     padding: 8px;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     margin: 0;
@@ -1139,6 +1167,7 @@ body {
     display: block;
     box-sizing: border-box;
     border-radius: 4px;
+    cursor: pointer;
     padding: 13px 10px;
 }
 
