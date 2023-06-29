@@ -752,8 +752,8 @@ body {
 }
 
 .modal-close:active {
-   background-color: rgba(230, 230, 230, 1);
-   outline: none;
+    background-color: rgba(230, 230, 230, 1);
+    outline: none;
 }
 
 .modal-form {
@@ -767,7 +767,6 @@ body {
 
 .check-in-container {
     margin: 0;
-    padding-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -837,6 +836,20 @@ body {
     border: none;
     border-radius: 4px;
     width: 440px;
+}
+
+.modal-date:hover {
+    background-color: rgba(230, 230, 230, 1);
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+}
+
+.modal-date:focus {
+    background-color: rgba(230, 230, 230, 1);
+    border: 3px solid #83B3D3;
+    color: rgba(0, 0, 0, 1);
+    outline: none;
+
 }
 
 .error-message {
@@ -970,6 +983,7 @@ body {
 .home-link {
     background-image: url(../images/catalog/home.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*CATALOG-FILTER */
@@ -1188,6 +1202,7 @@ body {
 .button-rst:focus {
     color: rgba(255, 255, 255, 1);
     border: 3px solid #83B3D3;
+    outline: none;
 }
 
 .button-rst:active {
@@ -1197,6 +1212,7 @@ body {
 
 .button-rst:disabled {
     color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 /*SEARCH RESULTS */
