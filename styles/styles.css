@@ -850,7 +850,7 @@ body {
     margin: 0;
     padding: 2px 17px 0;
     color: #000000;
-    background-color: #F2F2F2;
+    background: #F2F2F2 url(../images/modal/date.svg) no-repeat 96% 50%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
