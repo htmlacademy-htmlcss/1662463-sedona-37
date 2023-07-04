@@ -1142,6 +1142,15 @@ body {
     height: 22px;
 }
 
+.home-link:hover {
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.home-link:focus {
+    border-radius: 1px;
+    outline: 3px solid #83B3D3;
+}
+
 /*CATALOG-FILTER */
 
 .catalog-objects {
