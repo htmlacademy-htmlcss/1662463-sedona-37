@@ -810,15 +810,8 @@ body {
     justify-content: space-between;
 }
 
-.guests-container-adult {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 247px;
-}
-
-.guests-container-children {
+.guests-container-adult,
+.guests-container-children  {
     margin: 0;
     padding: 0;
     display: flex;
@@ -828,12 +821,13 @@ body {
 
 .modal-label {
     margin: 0;
-    padding: 12px 10px 10px 0;
+    padding: 12px 5px 10px 0;
     color: #000000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     width: 127px;
+    display: inline-block;
 }
 
 .adult {
@@ -844,6 +838,69 @@ body {
 .children {
     margin: 0;
     padding-left: 4px;
+}
+
+.form-label-icon {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 2px;
+    right: 46px;
+    width: 26px;
+    height: 26px;
+}
+
+.tooltip-toggle {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.tooltip-text {
+    background-color: rgba(51, 51, 51, 1);
+    color: #ffffff;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: none;
+    width: 216px;
+    padding: 21px 19px 22px 22px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -116px;
+    margin-top: 15px;
+}
+
+.tooltip-text::after {
+    content: "";
+    background-image: url(../images/modal/info-arrow.svg);
+    width: 19px;
+    height: 9px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+    display: block;
 }
 
 .modal-date {
@@ -895,7 +952,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 110px;
- }
+}
 
 .decrease,
 .increase {
@@ -960,6 +1017,7 @@ body {
     color: rgba(255, 255, 255, 0.3);
     outline: none;
 }
+
 */
 /* CATALOG */
 
@@ -1342,7 +1400,7 @@ body {
 
 .layout:focus {
     border-color: rgba(104, 162, 202, 1);
-    outline: none ;
+    outline: none;
 }
 
 .layout:active {
