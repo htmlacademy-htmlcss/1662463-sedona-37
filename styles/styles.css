@@ -561,11 +561,25 @@ body {
     font-weight: 400;
     background-color: #F2F2F2;
     border-radius: 4px 0 0 4px;
-    border: none;
+    border: 3px solid transparent;
     box-sizing: border-box;
     text-align: start;
     padding: 12px 20px;
     width: 452px;
+}
+
+.subscribe-field:hover {
+    background-color: #E6E6E6;
+}
+
+.subscribe-field:focus {
+    background-color: #E6E6E6;
+    border: 3px solid #83B3D3;
+    outline: none;
+}
+
+.subscribe-field:active {
+    color: #000000;
 }
 
 .subscribe-button {
