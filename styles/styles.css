@@ -151,10 +151,6 @@ body {
     padding: 22px 12px;
 }
 
-.user-svg {
-    fill: black;
-}
-
 .user-link:focus {
     outline: none;
 }
@@ -169,6 +165,10 @@ body {
 
 .user-link:active .user-svg {
     fill: rgba(117, 97, 87, 0.3);
+}
+
+.user-svg {
+    fill: black;
 }
 
 .favorite {
