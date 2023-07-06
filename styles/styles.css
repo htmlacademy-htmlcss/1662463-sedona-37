@@ -1088,12 +1088,9 @@ body {
     outline: none;
 }
 
-*/
 /* CATALOG */
 
 /* MAIN-INNER */
-
-.main-inner {}
 
 .filter-container {
     color: #ffffff;
@@ -1520,7 +1517,7 @@ body {
     outline: none;
 }
 
-.select-control:avtive {
+.select-control:active {
     border-color: rgba(104, 162, 202, 1);
 }
 
