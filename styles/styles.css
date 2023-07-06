@@ -863,6 +863,8 @@ body {
 .children {
     margin: 0;
     padding-left: 4px;
+    padding-right: 72px;
+    box-sizing: border-box;
 }
 
 .form-label-icon {
@@ -871,9 +873,9 @@ body {
 
 .tooltip {
     position: absolute;
-    margin-top: 12px;
+    margin-top: 11px;
     margin-left: 2px;
-    right: 46px;
+    right: 37px;
     width: 26px;
     height: 26px;
 }
@@ -1185,7 +1187,7 @@ body {
     line-height: 24px;
     font-weight: 700;
     margin: 0;
-    padding: 0 0 32px;
+    padding: 0 0 33px;
 }
 
 .catalog-filter-list {
@@ -1213,7 +1215,7 @@ body {
 }
 
 .control:hover {
-    opacity: 0.6000000238418579;
+    opacity: 0.6;
 }
 
 .control:focus {
@@ -1221,7 +1223,7 @@ body {
 }
 
 .control:active {
-    opacity: 0.30000001192092896;
+    opacity: 0.3;
 }
 
 .control-input[type="checkbox"] {
@@ -1257,16 +1259,16 @@ body {
 }
 
 .control-input:hover {
-    opacity: 0.6000000238418579;
+    opacity: 0.6;
 }
 
 .control-input:focus {
-    border: 3px solid #83B3D3;
-    outline: none;
+    outline: 3px solid #83B3D3;
+    outline-offset: 0;
 }
 
 .control-input:active {
-    opacity: 0.30000001192092896;
+    opacity: 0.3;
 }
 
 .catalog-filter-price {
@@ -1281,7 +1283,7 @@ body {
     width: 288px;
     display: flex;
     gap: 2px;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
 }
 
 .price-label {
@@ -1302,7 +1304,7 @@ body {
 
 .price-number {
     margin: 0;
-    padding: 10px 17px;
+    padding: 9px 17px;
     background-color: #F2F2F2;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
@@ -1319,8 +1321,7 @@ body {
 
 .price-number:focus {
     background-color: #E6E6E6;
-    border: 3px solid #83B3D3;
-    outline: none;
+    outline: 3px solid #83B3D3;
 }
 
 .input-min {
@@ -1344,7 +1345,7 @@ body {
     border-top: 4px solid rgb(255, 255, 255, 0.3);
     position: absolute;
     left: 0;
-    top: 7px;
+    top: 10px;
     z-index: 1;
 }
 
@@ -1463,7 +1464,7 @@ body {
 
 .search-results {
     margin: 0 auto;
-    padding: 50px 70px 22px;
+    padding: 50px 70px 20px;
 }
 
 .search-container {
@@ -1576,11 +1577,22 @@ body {
     grid-gap: 20px;
     margin: 0 auto;
     padding: 40px 0;
+    position: relative;
+}
+
+.hotel-list::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #E6E6E6;
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 .hotel-item {
     margin: 0;
-    padding: 20px;
+    padding: 20px 19px;
     display: grid;
     grid-template-columns: repeat(2, 140px);
     grid-template-rows: 212px min-content min-content 36px min-content;
@@ -1594,6 +1606,7 @@ body {
 .hotel-link {
     color: #000000;
     text-decoration: none;
+    display: block;
     cursor: pointer;
 }
 
@@ -1763,11 +1776,8 @@ body {
     padding: 40px 0;
     list-style: none;
     display: flex;
+    gap: 8px;
     text-align: center;
-}
-
-.pagination-item:not(:last-child) {
-    margin-right: 8px;
 }
 
 .pagination-link {
@@ -1783,7 +1793,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
-    padding: 13px 10px;
+    padding: 13px;
 }
 
 .pagination-link:hover {
