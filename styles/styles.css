@@ -151,16 +151,27 @@ body {
     padding: 22px 12px;
 }
 
-.search {
-    background-image: url(../images/header/loupe-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.user-svg {
+    fill: black;
+}
+
+.user-link:focus {
+    outline: none;
+}
+
+.user-link:hover .user-svg {
+    fill: rgba(117, 97, 87, 1);
+}
+
+.user-link:focus .user-svg {
+    fill: rgba(117, 97, 87, 1);
+}
+
+.user-link:active .user-svg {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .favorite {
-    background-image: url(../images/header/heart-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     position: relative;
 }
 
