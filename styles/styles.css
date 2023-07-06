@@ -289,7 +289,7 @@ body {
 
 .features-item {
     margin: 0;
-    padding: 112px 85px;
+    padding: 112px 80px;
     box-sizing: border-box;
     min-height: 385px;
     background-color: #ffffff;
@@ -336,12 +336,13 @@ body {
     width: 60px;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.3);
-    left: 55px;
-    top: 87px;
+    left: 60px;
+    top: 86px;
 }
 
 .features-special::before {
     background-color: rgba(255, 255, 255, 0.3);
+    left: 55px;
 }
 
 
@@ -564,7 +565,7 @@ body {
     border: 3px solid transparent;
     box-sizing: border-box;
     text-align: start;
-    padding: 12px 20px;
+    padding: 0 17px;
     width: 452px;
 }
 
@@ -626,10 +627,11 @@ body {
 
 .contacts {
     margin: 0 auto;
-    padding: 43px 70px 35px;
+    padding: 44px 70px 35px;
     display: flex;
     flex-wrap: wrap;
     width: 1060px;
+    justify-content: space-between;
 }
 
 .social-list {
@@ -643,11 +645,16 @@ body {
 
 .social-item {
     margin: 0 auto;
-    padding: 10px;
 }
 
 .social-link {
     cursor: pointer;
+    display: block;
+    padding: 12px;
+}
+
+.social-link:focus {
+    outline: none;
 }
 
 .social-svg {
@@ -668,7 +675,7 @@ body {
 }
 
 .tel-container {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 
 }
@@ -681,9 +688,10 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     box-sizing: border-box;
-    width: 331px;
+    width: 336px;
     display: block;
     cursor: pointer;
+    padding: 1px 0 0 3px;
 }
 
 .tel-link:hover {
@@ -703,6 +711,11 @@ body {
     margin: 0;
     padding-top: 4px;
     cursor: pointer;
+    display: block;
+}
+
+.academy-link:focus {
+    outline: none;
 }
 
 .academy-svg {
@@ -1296,7 +1309,7 @@ body {
 
 .price-number {
     margin: 0;
-    padding: 12px 20px;
+    padding: 10px 17px;
     background-color: #F2F2F2;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
