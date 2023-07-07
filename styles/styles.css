@@ -538,7 +538,7 @@ body {
 
 .subscribe {
     margin: 0;
-    padding: 96px 258px 104px;
+    padding: 96px 188px 104px;
     text-align: center;
 }
 
@@ -563,7 +563,7 @@ body {
 .subscribe-text {
     margin: 0;
     margin-bottom: 55px;
-    padding: 0 70px;
+    padding: 0 140px;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
