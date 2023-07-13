@@ -1540,7 +1540,8 @@ input[type=number] {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
+  width: 338px;
 }
 
 .select-control {
